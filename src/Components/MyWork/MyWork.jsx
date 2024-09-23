@@ -1,28 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MyWork.css";
 import logo from "../../assets/logo.svg";
 import mywork_data from "../../assets/mywork_data";
-import arrow from "../../assets/arrow.svg"
+import arrow from "../../assets/arrow.svg";
 
 const MyWork = () => {
-const handleShowMore = () =>{
-  window.open("https://app.netlify.com/teams/negisuraj080/sites", "_blank");
-  
-}
+  const [isExpanded,setExpanded] = useState(false);
+
+  const handleShowMore = () => {
+    setExpanded(!isExpanded); // Toggle between true and false
+  };
+
+
+
 
   return (
-    <div id="work" className="mywork">
+        <div id="work" className="mywork">
       <div className="mywork-tittle">
         <h1>My Work</h1>
         <img src={logo} alt="" />
       </div>
-      <div className="mywork-container">
+      <div className={`mywork-container ${isExpanded ? "expanded" : ""}`}>
         {mywork_data.map((work, index) => {
-          return <img key={index} src={work.w_img} alt="" />;
+          return (
+            <a
+              key={index}
+              href={work.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={work.w_img} alt="" />
+            </a>
+          );
         })}
       </div>
-      <div className="mywork-showmore">
-        <p onClick={handleShowMore}>Show More</p>
+      <div className="mywork-showmore" onClick={handleShowMore}>
+        <p>{isExpanded ? "Show Less" : "Show More"}</p>
         <img src={arrow} alt="" />
       </div>
     </div>
@@ -30,27 +43,3 @@ const handleShowMore = () =>{
 };
 
 export default MyWork;
-
-
-// import React from "react";
-// import "./MyWork.css";
-// import logo from "../../assets/logo.svg";
-// import mywork_data from "../../assets/mywork_data";
-
-// const MyWork = () => {
-//   return (
-//     <div className="mywork">
-//       <div className="mywork-title">
-//         <h1>My Latest Work</h1>
-//         <img src={logo} alt="Logo" />
-//       </div>
-//       <div className="mywork-container">
-//         {mywork_data.map((work, index) => {
-//           return <img key={index} src={work.w_img} alt={work.w_name} />;
-//         })}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default MyWork;
