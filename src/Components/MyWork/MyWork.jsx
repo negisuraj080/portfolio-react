@@ -5,6 +5,11 @@ import mywork_data from "../../assets/mywork_data";
 import arrow from "../../assets/arrow.svg"
 
 const MyWork = () => {
+const handleShowMore = () =>{
+  window.open("https://app.netlify.com/teams/negisuraj080/sites", "_blank");
+  
+}
+
   return (
     <div id="work" className="mywork">
       <div className="mywork-tittle">
@@ -17,7 +22,7 @@ const MyWork = () => {
         })}
       </div>
       <div className="mywork-showmore">
-        <p>Show More</p>
+        <p onClick={handleShowMore}>Show More</p>
         <img src={arrow} alt="" />
       </div>
     </div>

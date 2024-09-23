@@ -12,13 +12,15 @@
   width: 360px;
 }
 
-.hero h1 {
+.head{
   text-align: center;
   width: 70%;
-  font-size: 90px;
+  font-size: 50px;
   font-weight: 600;
 }
-.hero h1 span {
+
+.head {
+  
   background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
   background-clip: text;
   -webkit-background-clip: text;

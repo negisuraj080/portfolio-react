@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div id='home' className='hero'>
       <img src={image} alt="" />
-      <h1><span>I'm Suraj Negi,</span>Frontend Developer based in India.</h1>
+      <div className='head'><span>I'm Suraj Negi,</span>Frontend Developer based in India.</div>
       <p>I am a Frontend Developer based in Himachal Pradesh, India with a strong foundation in modern web technologies. I am actively seeking opportunities to apply my skills and contribute to innovative projects. I'm eager to join a dynamic team where I can grow and make an impact as I embark on my professional journey.</p>
       <div className='hero-action'>
         <div className="hero-connect"><AnchorLink className="anchor-link" offset={50} href="#contact">Connect with me</AnchorLink></div>

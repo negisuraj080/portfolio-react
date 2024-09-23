@@ -9,7 +9,7 @@ const About = () => {
         <h1>About me</h1>
         <img src={logo} alt="" />
       </div>
-      <div className="about">
+      <div className="about1">
         <div className="about-para">
         <p>
         I am a passionate Frontend Developer with a strong foundation in HTML, CSS, Tailwind CSS, JavaScript, and React.js. Having recently completed my studies, I am eager to apply my skills and collaborate with dynamic teams to contribute to impactful projects and grow within the industry
