@@ -105,12 +105,10 @@
   .mywork-container {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    
-  }
+    height: 290px;
+    }
 
-  .mywork-container.expanded {
-    height: 280px;
-  }
+  
 
   .mywork-container img {
     width: 100%;
@@ -122,6 +120,6 @@
     font-size: 18px;
     margin: 50px auto;
     cursor: pointer;
-    
+     
   }
 }
