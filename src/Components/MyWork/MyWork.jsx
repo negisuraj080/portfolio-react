@@ -5,17 +5,14 @@ import mywork_data from "../../assets/mywork_data";
 import arrow from "../../assets/arrow.svg";
 
 const MyWork = () => {
-  const [isExpanded,setExpanded] = useState(false);
+  const [isExpanded, setExpanded] = useState(false);
 
   const handleShowMore = () => {
-    setExpanded(!isExpanded); // Toggle between true and false
+    setExpanded(!isExpanded);
   };
 
-
-
-
   return (
-        <div id="work" className="mywork">
+    <div id="work" className="mywork">
       <div className="mywork-tittle">
         <h1>My Work</h1>
         <img src={logo} alt="" />
