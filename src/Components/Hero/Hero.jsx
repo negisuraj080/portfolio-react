@@ -38,6 +38,16 @@ const Hero = () => {
         <div className="hero-resume" onClick={handleClick}>
           My Resume
         </div>
+
+        <div className="hero-connect">
+          <AnchorLink
+            className="anchor-link full-click"
+            offset={50}
+            href="https://www.linkedin.com/in/suraj-negi080"
+          >
+            LinkedIn
+          </AnchorLink>
+        </div>
       </div>
     </div>
   );
