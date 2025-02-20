@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import image from "../../assets/face5.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import resume from "../../assets/IT Resume Latest.pdf";
+import resume from "../../assets/Suraj Resume.pdf";
 
 const Hero = () => {
   const handleClick = () => {
