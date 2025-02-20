@@ -40,13 +40,14 @@ const Hero = () => {
         </div>
 
         <div className="hero-connect">
-          <AnchorLink
-            className="anchor-link full-click"
-            offset={50}
-            href="https://www.linkedin.com/in/suraj-negi080"
-          >
-            LinkedIn
-          </AnchorLink>
+          <a
+    className="anchor-link full-click"
+    href="https://www.linkedin.com/in/suraj-negi080"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn
+  </a>
         </div>
       </div>
     </div>
